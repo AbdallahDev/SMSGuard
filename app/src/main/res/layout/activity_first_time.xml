@@ -1,0 +1,125 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/bgimage"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="574dp"
+            android:background="@drawable/transparentimage">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="37dp"
+                android:layout_marginLeft="30dp"
+                android:id="@+id/linearLayout">
+
+
+                <customfonts.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Enter 4 digits password then you can change it any time later from the Setting menu"
+                    android:textSize="16dp"
+                    android:textColor="#ADCCE2"
+                    android:layout_marginLeft="16dp"
+
+                    />
+
+            </LinearLayout>
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:background="@drawable/sms_logo2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="110dp"
+                android:id="@+id/imageView" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@+id/imageView"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="35dp">
+
+                <customfonts.MyEditText
+                    android:textSize="16dp"
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Password"
+                    android:textColorHint="#ADCCE2"
+                    android:maxLength="12"
+                    android:layout_marginLeft="22dp"
+                    android:inputType="textPassword"
+                    android:textColor="#ADCCE2"
+                    android:background="#0000"
+                    android:padding="16dp"
+                    android:drawableRight="@drawable/pasword"
+                    android:layout_marginRight="35dp"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#ADCCE2"/>
+
+                <customfonts.MyEditText
+                    android:textSize="16dp"
+                    android:id="@+id/confirm_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Confirm Password"
+                    android:textColorHint="#ADCCE2"
+                    android:maxLength="12"
+                    android:layout_marginLeft="22dp"
+                    android:inputType="textPassword"
+                    android:textColor="#ADCCE2"
+                    android:background="#0000"
+                    android:padding="16dp"
+                    android:drawableRight="@drawable/pasword"
+                    android:layout_marginRight="35dp"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#ADCCE2"/>
+
+                <customfonts.MyTextView
+                    android:id="@+id/btn_save_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rect"
+                    android:text="Save Password"
+                    android:textSize="16dp"
+                    android:textColor="#fff"
+                    android:gravity="center"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:padding="16dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="28dp"
+                    android:layout_marginTop="32dp"
+
+                    />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

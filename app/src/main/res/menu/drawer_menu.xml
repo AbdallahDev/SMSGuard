@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <group android:checkableBehavior="single">
+
+            <item android:id="@+id/item1"
+                android:title="Home"
+                android:icon="@mipmap/ic_home_black_24dp"/>
+
+            <item android:id="@+id/item2"
+                android:title="Settings"
+                android:icon="@mipmap/ic_settings_black_24dp"/>
+
+            <item android:id="@+id/item3"
+                android:title="Help"
+                android:icon="@mipmap/ic_help_outline_black_24dp"/>
+
+            <item android:id="@+id/item4"
+                android:title="About Us"
+                android:icon="@mipmap/ic_verified_user_black_24dp"/>
+        </group>
+    </menu>
